@@ -10,11 +10,52 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="controls">
+					<div class="controls span1">
 							<a class="btn"><i class="icon-off"></i><br/>Arr&ecirc;ter</a>
 							<a class="btn"><i class="icon-repeat"></i><br/>Red&eacute;marrer</a>
 						</div>
-						<!--<canvas id="canvas" width="300" height="300"></canvas>-->
+						<div id="gauge1" class="200x160px span2" style="width: 200px; height:160px;"></div>
+						<div id="gauge2" class="200x160px span2" style="width: 200px; height:160px;"></div>
+						<div id="gauge3" class="200x160px span2" style="width: 200px; height:160px;"></div>
+						<div id="gauge4" class="200x160px span2" style="width: 200px; height:160px;"></div>
+						<div id="gauge5" class="200x160px span2" style="width: 200px; height:160px;"></div>
+						<script>
+						  var g = new JustGage({
+						    id: "gauge1", 
+						    value: 2, 
+						    min: 0,
+						    max: 16,
+						    title: "Nombre de Joueurs"
+						  }); 
+						  var h = new JustGage({
+						    id: "gauge2", 
+						    value: 67, 
+						    min: 0,
+						    max: 100,
+						    title: "Visitors"
+						  }); 
+						  var i = new JustGage({
+						    id: "gauge3", 
+						    value: 67, 
+						    min: 0,
+						    max: 100,
+						    title: "Visitors"
+						  }); 
+						  var j = new JustGage({
+						    id: "gauge4", 
+						    value: 67, 
+						    min: 0,
+						    max: 100,
+						    title: "Visitors"
+						  }); 
+						  var k = new JustGage({
+						    id: "gauge5", 
+						    value: 67, 
+						    min: 0,
+						    max: 100,
+						    title: "Visitors"
+						  }); 
+						</script>
 				</div>
 			
 			
