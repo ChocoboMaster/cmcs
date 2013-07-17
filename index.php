@@ -29,31 +29,31 @@
 						  }); 
 						  var h = new JustGage({
 						    id: "gauge2", 
-						    value: 67, 
+						    value: 564, 
 						    min: 0,
-						    max: 100,
-						    title: "Visitors"
+						    max: 1024,
+						    title: "Memoire vive"
 						  }); 
 						  var i = new JustGage({
 						    id: "gauge3", 
-						    value: 67, 
+						    value: 49, 
 						    min: 0,
 						    max: 100,
-						    title: "Visitors"
+						    title: "Utilisation processeur (%)"
 						  }); 
 						  var j = new JustGage({
 						    id: "gauge4", 
-						    value: 67, 
+						    value: 200, 
 						    min: 0,
-						    max: 100,
-						    title: "Visitors"
+						    max: 1024,
+						    title: "Espace disque (Mb)"
 						  }); 
 						  var k = new JustGage({
 						    id: "gauge5", 
 						    value: 67, 
 						    min: 0,
 						    max: 100,
-						    title: "Visitors"
+						    title: "Nombre de bannis"
 						  }); 
 						</script>
 				</div>
@@ -116,7 +116,24 @@
 
 					<div class="widget span4">
 						<div class="head">Maintenance</div>
-						<div class="body">asd
+						<div class="body">
+							<?php
+
+								include "core/mysql_dbconnect.inc.php";
+
+								$data = mysql_query("SELECT title,text,status FROM maintenances ORDER BY id DESC LIMIT 4");
+
+								while ($row = mysql_fetch_assoc($data)) {
+									if($row['status'] == 1){
+										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-success pull-right'>Effectue</span></div><br/>
+											".$row['text']."<hr>";
+									}else{
+										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-warning pull-right'>En cours</span></div><br/>
+											".$row['text']."<hr>";
+									}
+								}
+
+							?>
 						</div>
 					</div>
 

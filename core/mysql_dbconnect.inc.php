@@ -2,7 +2,7 @@
  DEFINE ('DBUSER', 'root');
  DEFINE ('DBPW', '');
  DEFINE ('DBHOST', '127.0.0.1');
- DEFINE ('DBNAME', 'chocoboServer');
+ DEFINE ('DBNAME', 'chocobo');
 
 if ($dbc = mysql_connect (DBHOST, DBUSER, DBPW)) {
 	if (!mysql_select_db (DBNAME)) {
