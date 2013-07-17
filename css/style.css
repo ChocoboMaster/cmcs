@@ -1,0 +1,77 @@
+body{
+	background: url(../img/pw_maze_white.png) repeat;
+	font-family: Orienta;
+}
+.dashnav li{
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#eeeeee));
+	background-image: -webkit-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: -o-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: linear-gradient(to bottom,#ffffff,#eeeeee);
+	background-repeat: repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeeeeee',GradientType=0);
+}
+
+.dashnav{
+
+}
+.main {
+	margin-top: 50px;
+}
+
+.place hr{
+	border:0px;
+	color: #c5c5c5;
+	background-color: #c5c5c5;
+	height: 1px;
+	margin: 3px;
+}
+.place p{
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.controls {
+	width: 60px;
+}
+.controls a{
+	height:50px;
+	width: 80px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.spacer{
+	margin: 10px;
+}
+
+.widget{
+	box-shadow: 0 5px 10px 0 #c5c5c5;
+	border: lightgray solid 1px;
+	margin-top: 10px;
+}
+
+.widget .head{
+	height:20px;
+	background:#bebec5;
+	padding: 10px;
+	border-bottom: lightgray solid 1px;
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#eeeeee));
+	background-image: -webkit-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: -o-linear-gradient(top,#ffffff,#eeeeee);
+	background-image: linear-gradient(to bottom,#ffffff,#eeeeee);
+	background-repeat: repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeeeeee',GradientType=0);
+}
+
+.widget .body{
+	background: white;
+	padding: 5px;
+}
+
+.widget .form-actions{
+	margin:0;
+}
