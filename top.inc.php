@@ -65,6 +65,6 @@ session_start();
 					<li><a href="backups.php"><i class="icon-hdd"></i> Backups</a></li>
 					<li><a><i class="icon-folder-open"></i> Acc&egrave;s FTP</a></li>
 					<li><a href="properties.php"><i class="icon-cog"></i> Propri&eacute;t&eacute;es Serveur</a></li>
-					<li><a><i class="icon-repeat"></i> R&eacute;initialisation Serveur</a></li>
+					<li><a href="reset.php"><i class="icon-repeat"></i> R&eacute;initialisation Serveur</a></li>
 				</ul>
 			</div>
