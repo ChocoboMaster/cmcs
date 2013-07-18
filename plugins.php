@@ -57,11 +57,12 @@
 					<div class="widget span6">
 						<div class="head">iConomy</div>
 						<div class="body">
-							
+							<div class="small-plugins">
 								Imp&ocirc;ts, salaires, int&eacute;r&ecirc;ts... Devenez un cafteur capitaliste!
 								<form>
 									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
 								</form>
+							</div>
 						</div>	
 					</div>
 				</div>

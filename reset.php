@@ -12,7 +12,7 @@
 		<div class="row-fluid">
 			<div class="widget span12">
 				<div class="head">R&eacute;initialiser le serveur</div>
-				<div class="body">
+				<div class="body center">
 					&Ecirc;tes-vous s&ucirc;r de vouloir r&eacute;initialiser votre serveur?<br/>
 					<a class="btn btn-danger">R&eacute;initialiser</a>
 

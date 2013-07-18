@@ -12,7 +12,7 @@
 		<div class="row-fluid">
 			<div class="widget span6">
 				<div class="head">Cr&eacute;er un Backup Journalier</div>
-				<div class="body">
+				<div class="body center">
 					Heure : <select class="span2">
 								<?php 
 									for($i=0;$i<24;$i++){
@@ -46,7 +46,8 @@
 				<div class="body">
 					<div class="installed-plugins">
 						Date<hr/>
-						12-04-13 a 12:12<a class="btn btn-success"><i class="icon icon-white icon-download"></i> T&eacute;l&eacute;charger</a><a class="btn btn-warning"><i class="icon icon-white icon-forward"></i> Restauration</a> <a class="btn btn-danger"><i class="icon icon-white icon-trash"></i> Supprimer</a> <hr/>
+						12-04-13 a 12:12 <div class="pull-right"><a class="btn btn-success"><i class="icon icon-white icon-download"></i> T&eacute;l&eacute;charger</a>
+									<a class="btn btn-warning"><i class="icon icon-white icon-forward"></i> Restauration</a> <a class="btn btn-danger"><i class="icon icon-white icon-trash"></i> Supprimer</a></div> <hr/>
 					</div>
 				</div>
 				<div class="form-actions">

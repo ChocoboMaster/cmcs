@@ -75,3 +75,21 @@ body{
 .widget .form-actions{
 	margin:0;
 }
+
+.properties table, .properties td, .properties tr{
+	border: solid lightgray 1px;
+	padding: 10px;
+}
+
+.properties table{
+	width: 80%;
+}
+
+.center{
+	text-align: center;
+}
+
+.small-plugins form{
+	margin: 5px;
+	height: 25px;
+}

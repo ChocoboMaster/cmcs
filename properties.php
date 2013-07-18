@@ -12,7 +12,7 @@
 		<div class="row-fluid">
 			<div class="widget span12">
 				<div class="head">Propri&eacute;t&eacute;es du serveur</div>
-				<div class="body">
+				<div class="body properties">
 					<table>
 						<tr>
 							<td>allow-flight</td><td><input type="radio"/> Activer <input type="radio"/> D&eacute;sactiver</td>
