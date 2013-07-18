@@ -23,7 +23,7 @@
 						</ul>
 						<div class="tab-content">
 							<div class="tab-pane active" id="tab1">
-								<table><tr><td>Pseudo</td><td>Actions</td></tr>
+								<table class="span12"><tr><td>Pseudo</td><td>Actions</td></tr>
 									<tr><td>ChocoboMaster</td><td><a class="btn btn-success disabled"><i class="icon icon-white icon-eye-open"></i> Op</a>
 											<a class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Ban</a>
 											<a class="btn btn-warning"><i class="icon icon-white icon-eject"></i> Kick</a>

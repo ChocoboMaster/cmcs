@@ -1,5 +1,14 @@
 <?php include("top.inc.php"); ?>
 
+<?php
+	
+	include_once "core/mysql_dbconnect.inc.php";
+
+	$data = mysql_query("SELECT max_players,user_id,disk_space,ip,port,version,max_memory FROM servers_mc WHERE id='1' LIMIT 1");
+	$val = mysql_fetch_assoc($data);
+
+?>
+
 			<div class="container-fluid span10">
 				<div class="row-fluid">
 					<div class="place spacer span12">
@@ -22,16 +31,16 @@
 						<script>
 						  var g = new JustGage({
 						    id: "gauge1", 
-						    value: 2, 
+						    value: 0, 
 						    min: 0,
-						    max: 16,
-						    title: "Nombre de Joueurs"
+						    max: <?php echo $val['max_players'];?>,
+						    title: "Nombre de joueurs"
 						  }); 
 						  var h = new JustGage({
 						    id: "gauge2", 
 						    value: 564, 
 						    min: 0,
-						    max: 1024,
+						    max: <?php echo $val['max_memory'];?>,
 						    title: "Memoire vive"
 						  }); 
 						  var i = new JustGage({
@@ -43,9 +52,9 @@
 						  }); 
 						  var j = new JustGage({
 						    id: "gauge4", 
-						    value: 200, 
+						    value: 52, 
 						    min: 0,
-						    max: 1024,
+						    max: <?php echo $val['disk_space'];?>,
 						    title: "Espace disque (Mb)"
 						  }); 
 						  var k = new JustGage({
@@ -119,13 +128,13 @@
 						<div class="body">
 							<?php
 
-								include "core/mysql_dbconnect.inc.php";
+								include_once "core/mysql_dbconnect.inc.php";
 
 								$data = mysql_query("SELECT title,text,status FROM maintenances ORDER BY id DESC LIMIT 4");
 
 								while ($row = mysql_fetch_assoc($data)) {
 									if($row['status'] == 1){
-										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-success pull-right'>Effectue</span></div><br/>
+										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-success pull-right'>Effectu&eacute;</span></div><br/>
 											".$row['text']."<hr>";
 									}else{
 										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-warning pull-right'>En cours</span></div><br/>
