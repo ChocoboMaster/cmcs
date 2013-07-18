@@ -1,5 +1,15 @@
 <?php include("top.inc.php"); ?>
 
+<?php
+	
+	include_once "core/mysql_dbconnect.inc.php";
+
+	$data = mysql_query("SELECT version FROM servers_mc WHERE id='1' LIMIT 1");
+	$e = mysql_fetch_assoc($data);
+	$val = $e['version'];
+
+?>
+
 	<div class="container-fluid span10">
 		<div class="row-fluid">
 			<div class="place spacer span12">
@@ -8,6 +18,19 @@
 				<hr/>
 			</div>
 		</div>
+
+		<?php 
+
+			if(substr($val, 0,-3) !='b'){
+				echo '<div class="alert alert-error">
+						  Les plugins ne sont pas pris en charge avec une version Vanilla de Minecraft! Utilisez Bukkit pour avoir acc&egrave;s aux plugins.
+					</div>';
+				$bukkit = FALSE;
+			}else{
+				$bukkit = TRUE;
+			}
+
+		?>
 
 		<div class="row-fluid">
 			<div class="auto-plugins span8">
@@ -22,7 +45,7 @@
 							<div class="small-plugins">
 								G&eacute;rez votre serveur facilement avec des fonctionalit&eacute;s suppl&eacute;mentaires.
 								<form>
-									<input type="button" class="btn btn-primary pull-right disabled" value="Install&eacute;"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>" />
 								</form>
 							</div>
 						</div>	
@@ -34,7 +57,7 @@
 							<div class="small-plugins">
 								Permet &agrave; chaque joueur de cr&eacute;er sa guilde ou d'en int&eacute;grer une.
 								<form>
-									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>"/>
 								</form>
 							</div>
 						</div>	
@@ -48,7 +71,7 @@
 							<div class="small-plugins">
 								Toujours sous Essentials, g&eacute;rez aussi les rangs de vos joueurs.
 								<form>
-									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>"/>
 								</form>
 							</div>
 						</div>	
@@ -60,7 +83,7 @@
 							<div class="small-plugins">
 								Imp&ocirc;ts, salaires, int&eacute;r&ecirc;ts... Devenez un cafteur capitaliste!
 								<form>
-									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>"/>
 								</form>
 							</div>
 						</div>	
@@ -74,7 +97,7 @@
 							<div class="small-plugins">
 								Donnez de l'argemt pour un travail pr&eacute;cis, avec un syst&egrave;me de classes et d'XP.
 								<form>
-									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>"/>
 								</form>
 							</div>
 						</div>	
@@ -86,7 +109,7 @@
 							<div class="small-plugins">
 								Permet de s&eacute;curiser les inventaires gr&acirc;ce &agrave; une pancarte.
 								<form>
-									<input type="button" class="btn btn-primary pull-right" value="Installer ce plugin"/>
+									<input type="button" class="btn btn-primary pull-right <?php if(!$bukkit){echo 'disabled';}?>" value="<?php if(!$bukkit){echo 'Indisponible';}else{echo 'Installer ce plugin';}?>"/>
 								</form>
 							</div>
 						</div>	
