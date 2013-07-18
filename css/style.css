@@ -69,7 +69,7 @@ body{
 
 .widget .body{
 	background: white;
-	padding: 5px;
+	padding: 10px;
 }
 
 .widget .form-actions{
@@ -92,4 +92,8 @@ body{
 .small-plugins form{
 	margin: 5px;
 	height: 25px;
+}
+
+.console table, .console tr,.console td{
+	border: solid lightgray 1px;
 }

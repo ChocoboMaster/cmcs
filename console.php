@@ -13,7 +13,7 @@
 			<div class="head">Console</div>
 			<div class="body">
 				<div class="console">
-					<table><tr><td>Date</td><td>Log</td></tr>
+					<table style="width:100%;"><tr><td class="span1"><strong>Date</strong></td><td><strong>Log</strong></td></tr>
 						<tr><td>12-03-13</td><td>Starting Minecraft Server....</td></tr>
 					</table>
 				</div>

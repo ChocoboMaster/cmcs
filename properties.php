@@ -69,7 +69,10 @@
 							<td>white-list</td><td><input type="radio"/> Activer <input type="radio"/> D&eacute;sactiver</td>
 						</tr>
 					</table>
-				</div>	
+				</div>
+				<div class="form-actions center">
+					<a class="btn btn-primary center">Modifier</a>
+				</div>
 			</div>
 		</div>
 	</div>
