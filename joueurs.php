@@ -23,7 +23,7 @@
 						</ul>
 						<div class="tab-content">
 							<div class="tab-pane active" id="tab1">
-								<table class="span12"><tr><td>Pseudo</td><td>Actions</td></tr>
+								<table class="span12"><tr><td class="span6">Pseudo</td><td>Actions</td></tr>
 									<tr><td>ChocoboMaster</td><td><a class="btn btn-success disabled"><i class="icon icon-white icon-eye-open"></i> Op</a>
 											<a class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Ban</a>
 											<a class="btn btn-warning"><i class="icon icon-white icon-eject"></i> Kick</a>
@@ -39,7 +39,7 @@
 								</table>
 							</div>
 							<div class="tab-pane" id="tab2">
-								<table><tr><td>Pseudo</td><td>Actions</td></tr>
+								<table class="span12"><tr><td>Pseudo</td><td>Actions</td></tr>
 									<tr><td>ChocoboMaster</td><td>
 											<a class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Enlever</a>
 									</td></tr>
@@ -49,7 +49,7 @@
 								</table>
 							</div>
 							<div class="tab-pane" id="tab3">
-								<table><tr><td>Pseudo</td><td>Actions</td></tr>
+								<table class="span12"><tr><td>Pseudo</td><td>Actions</td></tr>
 									<tr><td>ChocoboMaster</td><td><a class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Un-ban</a>
 									</td></tr>
 									<tr><td>Admin</td><td><a class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Un-ban</a>
@@ -57,7 +57,7 @@
 								</table>
 							</div>
 							<div class="tab-pane" id="tab4">
-								<table><tr><td>Pseudo</td><td>Actions</td></tr>
+								<table class="span12"><tr><td>Pseudo</td><td>Actions</td></tr>
 									<tr><td>ChocoboMaster</td><td>
 											<a class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Enlever</a>
 									</td></tr>
