@@ -1,8 +1,5 @@
-<?php
-session_start();
 
-?>
-
+<!DOCTYPE HTML>
 <html class="win chrome chrome28 webkit webkit5"><head>
 	<title>
 		Servers
@@ -36,7 +33,7 @@ session_start();
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
  		<ul class="nav">
- 			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['username'];?> <b class="caret"></b></a>	<ul class="dropdown-menu">
+ 			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ChocoboMaster <b class="caret"></b></a>	<ul class="dropdown-menu">
                           <li><a href="#">Mon profil</a></li>
                           <li><a href="#">Messages priv&eacute;s</a></li>
                           <li class="divider"></li>

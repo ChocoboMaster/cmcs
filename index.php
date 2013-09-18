@@ -1,159 +1,97 @@
-<?php include("top.inc.php"); ?>
 
-<?php
+<!DOCTYPE HTML>
+<html class="win chrome chrome28 webkit webkit5"><head>
+	<title>
+		Servers
+	</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-1">
+	<meta name="description" content="">
+
+	<!-- Stylesheets -->
 	
-	include_once "core/mysql_dbconnect.inc.php";
+	<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
 
-	$data = mysql_query("SELECT max_players,user_id,disk_space,ip,port,version,max_memory FROM servers_mc WHERE id='1' LIMIT 1");
-	$val = mysql_fetch_assoc($data);
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 
-?>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
 
-			<div class="container-fluid span10">
-				<div class="row-fluid">
-					<div class="place spacer span12">
-						<hr/>
-						<span style="width: 500px; margin-left:30px;">Accueil > Dashboard</span> <span class="pull-right" style="width: 400px; text-align:right; margin-right:30px;">Type de serveur: Minecraft</span>
-						<hr/>
-					</div>
-				</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<ul class="nav">
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ChocoboMaster <b class="caret"></b></a>	<ul class="dropdown-menu">
+							  <li><a href="#">Mon profil</a></li>
+							  <li><a href="#">Messages priv&eacute;s</a></li>
+							  <li class="divider"></li>
+							  <li><a href="#">Deconnexion</a></li>
+							</ul></li>
+			</ul>
 
-				<div class="row-fluid">
-					<div class="controls span1">
-							<a class="btn"><i class="icon-off"></i><br/>Arr&ecirc;ter</a>
-							<a class="btn"><i class="icon-repeat"></i><br/>Red&eacute;marrer</a>
-						</div>
-						<div id="gauge1" class="200x160px span2" style="width: 200px; height:160px;"></div>
-						<div id="gauge2" class="200x160px span2" style="width: 200px; height:160px;"></div>
-						<div id="gauge3" class="200x160px span2" style="width: 200px; height:160px;"></div>
-						<div id="gauge4" class="200x160px span2" style="width: 200px; height:160px;"></div>
-						<div id="gauge5" class="200x160px span2" style="width: 200px; height:160px;"></div>
-						<script>
-						  var g = new JustGage({
-						    id: "gauge1", 
-						    value: 0, 
-						    min: 0,
-						    max: <?php echo $val['max_players'];?>,
-						    title: "Nombre de joueurs"
-						  }); 
-						  var h = new JustGage({
-						    id: "gauge2", 
-						    value: 564, 
-						    min: 0,
-						    max: <?php echo $val['max_memory'];?>,
-						    title: "Memoire vive"
-						  }); 
-						  var i = new JustGage({
-						    id: "gauge3", 
-						    value: 49, 
-						    min: 0,
-						    max: 100,
-						    title: "Utilisation processeur (%)"
-						  }); 
-						  var j = new JustGage({
-						    id: "gauge4", 
-						    value: 52, 
-						    min: 0,
-						    max: <?php echo $val['disk_space'];?>,
-						    title: "Espace disque (Mb)"
-						  }); 
-						  var k = new JustGage({
-						    id: "gauge5", 
-						    value: 67, 
-						    min: 0,
-						    max: 100,
-						    title: "Nombre de bannis"
-						  }); 
-						</script>
-				</div>
+			<ul class="nav pull-right">
+				<li><a><i class="icon-share-alt icon-white"></i> Deconnexion</a></li>
+			</ul>
+		</div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 50px;">
+	<div class="well span2" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="active"><a href="#">Accueil</a></li>
+			<li><a href="#">Console</a></li>
+			<li><a href="#">Joueurs</a></li>
+			<li><a href="#">Plugins</a></li>
+			<li><a href="#">Backup</a></li>
+			<li><a href="#">Acces FTP</a></li>
+			<li><a href="#">Prorrietes</a></li>
+			<li><a href="#">Reinitialisation</a></li>
+		</ul>
+	</div>
+	
+	<div class="span9">
+		<ul class="breadcrumb">
+			<li><a href="#">Dashboard</a> <span class="divider">/</span></li>
+			<li><a href="#">Accueil</a></li>
+		</ul>
+		
+		<div class="well">
+			127.0.0.1:25565 0/64
+		</div>
+		
+		<div class="well">
+			<h4>Liens Utiles</h4>
+			<a class="btn w50"><i class="icon-user"></i><br/>Joueurs</a>
+			<a class="btn w50"><i class="icon-th"></i><br/>Plugins</a>
+			<a class="btn w50"><i class="icon-hdd"></i><br/>Backups</a>
+			<a class="btn w50"><i class="icon-folder-open"></i><br/>FTP</a>
+			<a class="btn w50"><i class="icon-cog"></i><br/> Propri&eacute;t&eacute;es</a>
+			<a class="btn w50"><i class="icon-off"></i><br/>Arr&ecirc;ter</a>
+			<a class="btn w50"><i class="icon-repeat"></i><br/>Red&eacute;marrer</a>
+		</div>
+		
+		<div class="well">
 			
-			
-				<div class="row-fluid">
-					<div class="widget span12">
-						<div class="head">Liens Utiles</div>
-						<div class="body utils">
-							<div class="row-fluid">
-								<a class="btn span2"><i class="icon-user"></i><br/>Joueurs</a>
-								<a class="btn span2"><i class="icon-th"></i><br/>Plugins</a>
-								<a class="btn span2"><i class="icon-hdd"></i><br/>Backups</a>
-								<a class="btn span2"><i class="icon-folder-open"></i><br/>Acc&egrave;s FTP</a>
-								<a class="btn span2"><i class="icon-calendar"></i><br/>T&acirc;ches Planifi&eacute;es</a>
-								<a class="btn span2"><i class="icon-cog"></i><br/> Propri&eacute;t&eacute;es Serveur</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row-fluid">
-					<div class="widget span4">
-						<div class="head">Changer de version</div>
-						<div class="body">
-							<div class="versions">
-								<div class="alert">
-									<button type="button" class="close" data-dismiss="alert">&times;</button>
-								  	Veuillez fermer votre serveur avant d'effectuer un changement de version!
-								</div>
-								<p>Cette fontion vous permet de changer de version votre serveur:</p>
-								<form>
-									<select>
-										<option>Vanilla - 1.5.2</option>
-										<option>Vanilla - 1.5.1</option>
-										<option>Vanilla - 1.5.0</option>
-										<option>Vanilla - 1.4.7</option>
-										<option>Vanilla - 1.4.6</option>
-										<option>Vanilla - 1.4.5</option>
-										<option>Vanilla - 1.4.4</option>
-										<option>Vanilla - 1.4.2</option>
-										<option>CraftBukkit - 1.5.2</option>
-										<option>CraftBukkit - 1.5.1</option>
-										<option>CraftBukkit - 1.5.0</option>
-										<option>CraftBukkit - 1.4.7</option>
-										<option>CraftBukkit - 1.4.6</option>
-										<option>CraftBukkit - 1.4.5</option>
-										<option>CraftBukkit - 1.4.4</option>
-										<option>CraftBukkit - 1.4.2</option>
-									</select>
-							</div>
-						</div>
-									<div class="form-actions">
-										<input class="btn btn-primary pull-right" type="submit" value="Changer de version"/>
-									</div>
-								</form>
-						
-					</div>
-				
-
-					<div class="widget span4">
-						<div class="head">Maintenance</div>
-						<div class="body">
-							<?php
-
-								include_once "core/mysql_dbconnect.inc.php";
-
-								$data = mysql_query("SELECT title,text,status FROM maintenances ORDER BY id DESC LIMIT 4");
-
-								while ($row = mysql_fetch_assoc($data)) {
-									if($row['status'] == 1){
-										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-success pull-right'>Effectu&eacute;</span></div><br/>
-											".$row['text']."<hr>";
-									}else{
-										echo "<div class='row-fluid'><strong class='span8'>".$row['title']."</strong><span class='badge badge-warning pull-right'>En cours</span></div><br/>
-											".$row['text']."<hr>";
-									}
-								}
-
-							?>
-						</div>
-					</div>
-
-					<div class="widget span4">
-						<div class="head">Activit&eacute;s</div>
-						<div class="body">asd
-						</div>
-					</div>
-				</div>
-			</div>
+		</div>
+		
+		<div class="well span4" style="margin-left:0;">
+			<h4>Maintenance</h4>
+		</div>
+		
+		<div class="well span4 pull-right">
+			<h4>Activites</h4>
 		</div>
 	</div>
+</div>
 
-</body></html>
+
+
+</html>

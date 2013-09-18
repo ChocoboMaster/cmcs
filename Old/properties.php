@@ -76,6 +76,9 @@
 			</div>
 		</div>
 	</div>
+<?php include "core/properties.core.php";
+ReadInfo();
 
+?>
 
 </body></html>
