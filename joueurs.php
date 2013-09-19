@@ -43,28 +43,11 @@
 </div>
 
 <div class="container" style="margin-top: 50px;">
-	<div class="widget span2" style="padding: 8px 0;">
-		<ul class="nav nav-list">
-			<li><a href="index.php">Accueil</a></li>
-			<li><a href="#">Console</a></li>
-			<li class="active"><a href="joueurs.php">Joueurs</a></li>
-			<li><a href="#">Plugins</a></li>
-			<li><a href="#">Backup</a></li>
-			<li><a href="#">Acces FTP</a></li>
-			<li><a href="#">Prorrietes</a></li>
-			<li><a href="#">Reinitialisation</a></li>
-		</ul>
-	</div>
-	
 	<?php
-		showMenu(getPage());
-	?>
 	
-	<div class="span9">
-		<ul class="breadcrumb">
-			<li><a href="index.php">Dashboard</a> <span class="divider">/</span></li>
-			<li><a href="#">Joueurs</a></li>
-		</ul>
+		showMenu(getPage());
+		showBreadcrumbs(getPage());
+	?>
 		
 		<div class="widget">
 			<ul class="nav nav-pills">
