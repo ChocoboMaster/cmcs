@@ -43,9 +43,9 @@
 <div class="container" style="margin-top: 50px;">
 	<div class="widget span2" style="padding: 8px 0;">
 		<ul class="nav nav-list">
-			<li class="active"><a href="index.php">Accueil</a></li>
+			<li><a href="index.php">Accueil</a></li>
 			<li><a href="#">Console</a></li>
-			<li><a href="joueurs.php">Joueurs</a></li>
+			<li class="active"><a href="joueurs.php">Joueurs</a></li>
 			<li><a href="#">Plugins</a></li>
 			<li><a href="#">Backup</a></li>
 			<li><a href="#">Acces FTP</a></li>
@@ -57,26 +57,29 @@
 	<div class="span9">
 		<ul class="breadcrumb">
 			<li><a href="index.php">Dashboard</a> <span class="divider">/</span></li>
-			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Joueurs</a></li>
 		</ul>
 		
 		<div class="widget">
-			127.0.0.1:25565 0/64
-		</div>
-		
-		<div class="widget">
-			<h4>Liens Utiles</h4>
-			<a class="btn w50"><i class="icon-user"></i><br/>Joueurs</a>
-			<a class="btn w50"><i class="icon-th"></i><br/>Plugins</a>
-			<a class="btn w50"><i class="icon-hdd"></i><br/>Backups</a>
-			<a class="btn w50"><i class="icon-folder-open"></i><br/>FTP</a>
-			<a class="btn w50"><i class="icon-cog"></i><br/> Propri&eacute;t&eacute;es</a>
-			<a class="btn w50"><i class="icon-off"></i><br/>Arr&ecirc;ter</a>
-			<a class="btn w50"><i class="icon-repeat"></i><br/>Red&eacute;marrer</a>
-		</div>
-		
-		<div class="widget">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#tab1" data-toggle="tab">Joueurs Actifs</a></li>
+				<li><a href="#tab2" data-toggle="tab">Whitelist</a></li>
+				<li><a href="#tab3" data-toggle="tab">Operateurs</a></li>
+			</ul>
 			
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+					Actifs
+				</div>
+				
+				<div class="tab-pane" id="tab2">
+					Whitelist
+				</div>
+				
+				<div class="tab-pane" id="tab3">
+					Op
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
