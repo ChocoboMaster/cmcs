@@ -9,13 +9,10 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 
 	<!-- Meta -->
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="">
 
 	<!-- Stylesheets -->
-	
-	<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -47,13 +44,13 @@
 	<div class="well span2" style="padding: 8px 0;">
 		<ul class="nav nav-list">
 			<li class="active"><a href="#">Accueil</a></li>
-			<li><a href="#">Console</a></li>
+			<li class="disabled"><a href="#">Console</a></li>
 			<li><a href="#">Joueurs</a></li>
-			<li><a href="#">Plugins</a></li>
-			<li><a href="#">Backup</a></li>
-			<li><a href="#">Acces FTP</a></li>
-			<li><a href="#">Prorrietes</a></li>
-			<li><a href="#">Reinitialisation</a></li>
+			<li class="disabled"><a href="#">Plugins</a></li>
+			<li class="disabled"><a href="#">Backup</a></li>
+			<li class="disabled"><a href="#">Acces FTP</a></li>
+			<li class=""><a href="#">Prorpriétées</a></li>
+			<li class=""><a href="#">Reinitialisation</a></li>
 		</ul>
 	</div>
 	
@@ -67,8 +64,8 @@
 			127.0.0.1:25565 0/64
 		</div>
 		
-		<div class="well">
-			<h4>Liens Utiles</h4>
+		<div class="widget">
+			<h4>Liens Utiles</h4><hr/>
 			<a class="btn w50"><i class="icon-user"></i><br/>Joueurs</a>
 			<a class="btn w50"><i class="icon-th"></i><br/>Plugins</a>
 			<a class="btn w50"><i class="icon-hdd"></i><br/>Backups</a>
@@ -78,16 +75,8 @@
 			<a class="btn w50"><i class="icon-repeat"></i><br/>Red&eacute;marrer</a>
 		</div>
 		
-		<div class="well">
+		<div class="widget">
 			
-		</div>
-		
-		<div class="well span4" style="margin-left:0;">
-			<h4>Maintenance</h4>
-		</div>
-		
-		<div class="well span4 pull-right">
-			<h4>Activites</h4>
 		</div>
 	</div>
 </div>
