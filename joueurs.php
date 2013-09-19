@@ -1,4 +1,6 @@
-
+<?php
+	require_once("classes/pageLoad.fn.php");
+?>
 <!DOCTYPE HTML>
 <html class="win chrome chrome28 webkit webkit5"><head>
 	<title>
@@ -53,6 +55,10 @@
 			<li><a href="#">Reinitialisation</a></li>
 		</ul>
 	</div>
+	
+	<?php
+		showMenu(getPage());
+	?>
 	
 	<div class="span9">
 		<ul class="breadcrumb">
