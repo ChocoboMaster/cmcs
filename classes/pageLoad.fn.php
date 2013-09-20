@@ -18,7 +18,7 @@
 		echo $p == "plugins.php" ? "<li><a href='#'>Plugins</a></li>": "";
 		echo $p == "backup.php" ? "<li><a href='#'>Backup</a></li>": "";
 		echo $p == "ftp.php" ? "<li><a href='#'>FTP</a></li>": "";
-		echo $p == "proprietes.php" ? "<li><a href='#'>Proprietes</a></li>": "";
+		echo $p == "settings.php" ? "<li><a href='#'>Proprietes</a></li>": "";
 		echo $p == "reinitialisation.php" ? "<li><a href='#'>Reinitialisation</a></li>": "";
 		
 		echo "</ul>";
@@ -33,10 +33,56 @@
 		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='#'>Plugins</a></li>";
 		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='#'>Backup</a></li>";
 		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='#'>Acces FTP</a></li>";
-		echo "<li"; if($p=="proprietes.php"){echo " class='active'";} echo "><a href='#'>Prorprietes</a></li>";
+		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'>Prorprietes</a></li>";
 		echo "<li"; if($p=="reinitialisation.php"){echo " class='active'";} echo "><a href='#'>Reinitialisation</a></li>";
 		echo "</ul>";
 		echo "</div>";
 		
+	}
+	
+	function showTopNav(){
+		echo "<div class='navbar navbar-inverse navbar-fixed-top'>
+			<div class='navbar-inner'>
+				<div class='container'>
+					<ul class='nav'>
+						<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ChocoboMaster <b class='caret'></b></a>	<ul class='dropdown-menu'>
+									  <li><a href='#'>Mon profil</a></li>
+									  <li><a href='#'>Messages priv&eacute;s</a></li>
+									  <li class='divider'></li>
+									  <li><a href='#'>Deconnexion</a></li>
+									</ul></li>
+					</ul>
+
+					<ul class='nav pull-right'>
+						<li><a><i class='icon-share-alt icon-white'></i> Deconnexion</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>";
+	}
+	
+	function showHead(){
+		echo "<!DOCTYPE HTML>
+			<html class='win chrome chrome28 webkit webkit5'><head>
+				<title>
+					Servers
+				</title>
+
+				<!-- Favicon -->
+				<link rel='shortcut icon' href='img/favicon.ico'>
+
+				<!-- Meta -->
+				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+				<meta name='description' content=''>
+
+				<!-- Stylesheets -->
+				<link rel='stylesheet' href='css/bootstrap.css'>
+				<link rel='stylesheet' href='css/style.css'>
+
+				<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' ></script>
+				<script type='text/javascript' src='js/bootstrap.min.js'></script>
+			</head>
+			<body>";
+
 	}
 ?>

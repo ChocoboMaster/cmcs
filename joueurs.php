@@ -1,50 +1,13 @@
 <?php
 	require_once("classes/pageLoad.fn.php");
+	require_once("../config.php");
+	
+	showHead();
+	showTopNav();
 ?>
-<!DOCTYPE HTML>
-<html class="win chrome chrome28 webkit webkit5"><head>
-	<title>
-		Servers
-	</title>
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-
-	<!-- Meta -->
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<ul class="nav">
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ChocoboMaster <b class="caret"></b></a>	<ul class="dropdown-menu">
-							  <li><a href="#">Mon profil</a></li>
-							  <li><a href="#">Messages priv&eacute;s</a></li>
-							  <li class="divider"></li>
-							  <li><a href="#">Deconnexion</a></li>
-							</ul></li>
-			</ul>
-
-			<ul class="nav pull-right">
-				<li><a><i class="icon-share-alt icon-white"></i> Deconnexion</a></li>
-			</ul>
-		</div>
-    </div>
-</div>
 
 <div class="container" style="margin-top: 50px;">
 	<?php
-	
 		showMenu(getPage());
 		showBreadcrumbs(getPage());
 	?>
@@ -58,15 +21,95 @@
 			
 			<div class="tab-content">
 				<div class="tab-pane active" id="tab1">
-					Actifs
+					<div class="alert alert-info">
+						Il n'y a presentement personne dans votre serveur.
+					</div>	
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Utilisateur</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>ChocoboMaster</td>
+									<td>
+										<button type="button" class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Op</button>
+										<button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>DarkyFace</td>
+									<td>
+										<button type="button" class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Op</button>
+										<button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					
 				</div>
 				
 				<div class="tab-pane" id="tab2">
-					Whitelist
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Utilisateur</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>ChocoboMaster</td>
+								<td><button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Enlever</button></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>DarkyFace</td>
+								<td><button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Enlever</button></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="input-append pull-right" >
+						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible..." disabled>
+						<button class="btn btn-success" type="button" disabled>Ajouter</button>
+					</div>
+					
 				</div>
 				
 				<div class="tab-pane" id="tab3">
-					Op
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Utilisateur</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>ChocoboMaster</td>
+								<td><button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Enlever</button></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="input-append pull-right" >
+						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible..." disabled>
+						<button class="btn btn-success" type="button" disabled>Ajouter</button>
+					</div>
+					
+					
 				</div>
 			</div>
 		</div>
