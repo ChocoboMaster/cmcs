@@ -32,3 +32,8 @@ h4{
 	margin-bottom: 5px;
 	padding: 0;
 }
+
+center{
+	margin: auto;
+	text-align: center;
+}

@@ -19,7 +19,7 @@
 		echo $p == "backup.php" ? "<li><a href='#'>Backup</a></li>": "";
 		echo $p == "ftp.php" ? "<li><a href='#'>FTP</a></li>": "";
 		echo $p == "settings.php" ? "<li><a href='#'>Proprietes</a></li>": "";
-		echo $p == "reinitialisation.php" ? "<li><a href='#'>Reinitialisation</a></li>": "";
+		echo $p == "reinit.php" ? "<li><a href='#'>Reinitialisation</a></li>": "";
 		
 		echo "</ul>";
 	}
@@ -34,7 +34,7 @@
 		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='#'>Backup</a></li>";
 		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='#'>Acces FTP</a></li>";
 		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'>Prorprietes</a></li>";
-		echo "<li"; if($p=="reinitialisation.php"){echo " class='active'";} echo "><a href='#'>Reinitialisation</a></li>";
+		echo "<li"; if($p=="reinit.php"){echo " class='active'";} echo "><a href='reinit.php'>Reinitialisation</a></li>";
 		echo "</ul>";
 		echo "</div>";
 		

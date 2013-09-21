@@ -28,7 +28,7 @@
 		</div>
 		
 		<div class="widget">
-			
+		
 		</div>
 	</div>
 </div>

@@ -11,7 +11,7 @@
 		showMenu(getPage());
 		showBreadcrumbs(getPage());
 	?>
-		
+
 		Page
 	</div>
 </div>
