@@ -31,7 +31,7 @@
 		echo "<li"; if($p=="console.php"){echo " class='active'";} echo "><a href='#'>Console</a></li>";
 		echo "<li"; if($p=="joueurs.php"){echo " class='active'";} echo "><a href='joueurs.php'>Joueurs</a></li>";
 		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='#'>Plugins</a></li>";
-		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='#'>Backup</a></li>";
+		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='backup.php'>Backup</a></li>";
 		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='#'>Acces FTP</a></li>";
 		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'>Prorprietes</a></li>";
 		echo "<li"; if($p=="reinit.php"){echo " class='active'";} echo "><a href='reinit.php'>Reinitialisation</a></li>";
