@@ -77,6 +77,7 @@
 <?php
 	loadJS();
 ?>
+
 <script>
 	$(function(){
 		$(".pluginDescription").tooltip();
