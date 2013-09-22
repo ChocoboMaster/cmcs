@@ -26,19 +26,19 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Texte" >Essentials</a></td>
+						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Gérez votre serveur facilement avec des fonctionalités supplémentaires." >Essentials</a></td>
 						<td>
 							<button type="button" class="btn btn-primary"><i class="icon icon-white icon-download-alt"></i> Installer</button>							
 						</td>
 					</tr>
 					<tr>
-						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Texte" >iConomy</a></td>
+						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Impôts, salaires, intérêts... Devenez un cafteur capitaliste!" >iConomy</a></td>
 						<td>
 							<button type="button" class="btn btn-primary"><i class="icon icon-white icon-download-alt"></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Texte" >Factions</a></td>
+						<td><a class="pluginDescription" data-toggle="tooltip" title="" data-original-title="Permet à chaque joueur de créer sa guilde ou d'en intégrer une." >Factions</a></td>
 						<td>
 							<button type="button" class="btn btn-primary"><i class="icon icon-white icon-download-alt"></i> Installer</button>
 						</td>
