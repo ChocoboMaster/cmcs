@@ -18,12 +18,12 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	
 	<script src="js/raphael.2.1.0.min.js"></script>
 	<script src="js/justgage.1.0.1.min.js"></script>
