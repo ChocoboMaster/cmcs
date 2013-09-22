@@ -33,7 +33,26 @@ h4{
 	padding: 0;
 }
 
-center{
+.center{
 	margin: auto;
 	text-align: center;
+}
+
+.m0{
+	margin:0;
+}
+
+.m1{
+	margin-left: 10px;
+	width: 350px;
+}
+
+.pluginDescription{
+	text-decoration: none;
+	color: #333333;
+}
+
+.pluginDescription:hover{
+	text-decoration: none;
+	color: #333333;
 }

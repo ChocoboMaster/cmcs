@@ -116,6 +116,9 @@
 	</div>
 </div>
 
+<?php
+	loadJS();
+?>
 
 
 </html>

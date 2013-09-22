@@ -30,7 +30,7 @@
 		echo "<li"; if($p=="index.php"){echo " class='active'";} echo "><a href='index.php'>Accueil</a></li>";
 		echo "<li"; if($p=="console.php"){echo " class='active'";} echo "><a href='#'>Console</a></li>";
 		echo "<li"; if($p=="joueurs.php"){echo " class='active'";} echo "><a href='joueurs.php'>Joueurs</a></li>";
-		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='#'>Plugins</a></li>";
+		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='plugins.php'>Plugins</a></li>";
 		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='backup.php'>Backup</a></li>";
 		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='#'>Acces FTP</a></li>";
 		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'>Prorprietes</a></li>";
@@ -79,10 +79,14 @@
 				<link rel='stylesheet' href='css/bootstrap.css'>
 				<link rel='stylesheet' href='css/style.css'>
 
-				<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' ></script>
-				<script type='text/javascript' src='js/bootstrap.min.js'></script>
 			</head>
 			<body>";
 
+	}
+	
+	function loadJS(){
+		echo "<script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+				<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+				<script type='text/javascript' src='js/bootstrap.js'></script>";
 	}
 ?>
