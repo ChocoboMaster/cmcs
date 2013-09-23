@@ -39,8 +39,8 @@
 									<td>1</td>
 									<td>ChocoboMaster</td>
 									<td>
-										<button type="button" class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Op</button>
-										<button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
+										<button type="button" class="btn btn-success disabled"><i class="icon icon-white icon-eye-open"></i> Op</button>
+										<button type="button" class="btn btn-danger disabled"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
 										
 									</td>
 								</tr>
@@ -48,8 +48,8 @@
 									<td>2</td>
 									<td>DarkyFace</td>
 									<td>
-										<button type="button" class="btn btn-success"><i class="icon icon-white icon-eye-open"></i> Op</button>
-										<button type="button" class="btn btn-danger"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
+										<button type="button" class="btn btn-success disabled"><i class="icon icon-white icon-eye-open"></i> Op</button>
+										<button type="button" class="btn btn-danger disabled"><i class="icon icon-white icon-ban-circle"></i> Bannir</button>
 										
 									</td>
 								</tr>
