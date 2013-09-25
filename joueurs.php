@@ -2,7 +2,7 @@
 	require_once("classes/pageLoad.fn.php");
 	require_once("../config.php");
 	
-	require_once("classes/players.fn.php");
+	require_once("classes/showPlayers.fn.php");
 	
 	showHead();
 	showTopNav();
@@ -73,8 +73,8 @@
 
 					
 					<div class="input-append pull-right" >
-						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible..." disabled>
-						<button class="btn btn-success" type="button" disabled>Ajouter</button>
+						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible...">
+						<button class="btn btn-success" id="addOp" type="button">Ajouter</button>
 					</div>
 					
 					
@@ -87,6 +87,13 @@
 <?php
 	loadJS();
 ?>
+
+<script>
+	
+	$(function(){
+		alert("asd");
+	});
+</script>
 
 
 </html>

@@ -24,7 +24,7 @@
 				$op_count +=1;
 				echo "<tr><td>$op_count</td>";
 				echo "<td>$user</td>";
-				echo "<td><button type='button' class='btn btn-danger disabled'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+				echo "<td><button type='button' class='btn btn-danger' disabled><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
 			}
 			
 			echo "</tbody></table>";
@@ -33,11 +33,7 @@
 						Il n'y a presentement aucun opérateurs dans votre serveur.
 					</div>	";
 		}
-	}
-	
-	function addOperator($username){
-	
-	}
+	}	
 	
 	function showWhitelist(){
 		if(file_exists(MC_DIR."white-list.txt")){
@@ -78,8 +74,6 @@
 		}
 	}
 	
-	function addWhitelist(){
 
-	}
 
 ?>
