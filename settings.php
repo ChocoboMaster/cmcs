@@ -2,7 +2,7 @@
 	require_once("classes/pageLoad.fn.php");
 	require_once("../config.php");
 	
-	require_once("classes/settings.fn.php");
+	require_once("classes/settings.simplified.fn.php");
 	
 	showHead();
 	showTopNav();
