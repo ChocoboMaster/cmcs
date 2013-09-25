@@ -1,9 +1,11 @@
 <?php
 
-if(isset($_POST['appendedInputButton'])){
-
-}else{
-	header('Location: ../index.php');
-}
-
+	if($_POST){
+		$expected = array('appendedInputButton');
+		
+		
+	}else{
+		header('Location: ../index.php');
+	}	
+	
 ?>

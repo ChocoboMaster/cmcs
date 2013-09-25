@@ -91,7 +91,24 @@
 <script>
 	
 	$(function(){
-		alert("asd");
+		
+		
+		$('#addOp').click(function(){
+			var fields = $(this).serializeArray();
+	
+			$.ajax({
+				type: 'POST',
+				url: '/script/addOperator.php',
+				data: fields,
+				dataType: 'json',
+				success: function(data){
+					
+					},
+				error: function(data){
+						alert("error");
+					}
+			});
+		});
 	});
 </script>
 
