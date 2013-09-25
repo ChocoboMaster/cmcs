@@ -14,7 +14,7 @@
 		showBreadcrumbs(getPage());
 	?>
 		<div class="widget">
-			127.0.0.1:25565 0/<?php echo getMaxPlayers(); ?>
+			<?php echo getServerAddress(); echo ":"; echo getServerPort(); ?> 0/<?php echo getMaxPlayers(); ?>
 			<a class="btn btn-danger"><i class="icon-off icon-white"></i><br/>Arreter</a>
 			<a class="btn btn-warning"><i class="icon-repeat icon-white"></i><br/>Redemarrer</a>
 
