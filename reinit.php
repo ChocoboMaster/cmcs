@@ -18,8 +18,8 @@
 			</div>	
 			<center>Êtes-vous sûr de vouloir réinitialiser votre serveur?
 			<div class="form-actions">
-				<button type="submit" class="btn btn-danger">Réinitialiser</button>
-				<button type="button" class="btn">Retour</button>
+				<button type="submit" class="btn btn-danger" disabled>Réinitialiser</button>
+				<button type="button" class="btn" disabled>Retour</button>
 			</div>
 			</center>
 			
