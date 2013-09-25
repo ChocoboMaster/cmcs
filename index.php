@@ -2,6 +2,8 @@
 	require_once("classes/pageLoad.fn.php");
 	require_once("../config.php");
 	
+	require_once("classes/MinecraftQuery.php");
+	
 	showHead();
 	showTopNav();
 ?>
@@ -12,7 +14,9 @@
 		showBreadcrumbs(getPage());
 	?>
 		<div class="widget">
-			127.0.0.1:25565 0/64
+			127.0.0.1:25565 0/<?php echo getMaxPlayers(); ?>
+			<a class="btn btn-danger"><i class="icon-off icon-white"></i><br/>Arreter</a>
+			<a class="btn btn-warning"><i class="icon-repeat icon-white"></i><br/>Redemarrer</a>
 
 		</div>
 		
