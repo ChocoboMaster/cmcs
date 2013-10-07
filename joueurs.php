@@ -91,7 +91,30 @@
 <script>
 	
 	$(function(){
-		alert("asd");
+		
+		
+		$('#addOp').click(function(){
+			var username = $('#appendedInputButton').html();
+		alert($('#appendedInputButton').html());
+			$.ajax({
+				type: 'POST',
+				url: '/scripts/addOperator.php',
+				data: fields,
+				dataType: 'json',
+				success: function(data){
+						if(data.error){
+							$.each(data.fields, function(k,v){
+								
+							});
+						}else{
+						
+						}
+					},
+				error: function(data){
+						alert("error");
+					}
+			});
+		});
 	});
 </script>
 

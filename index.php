@@ -14,8 +14,23 @@
 		showBreadcrumbs(getPage());
 	?>
 		<div class="widget">
-			<?php echo getServerAddress(); echo ":"; echo getServerPort(); ?> 0/<?php echo getMaxPlayers(); ?>
-
+			<?php //echo getServerAddress(); echo ":"; echo getServerPort(); ?> 0/<?php //echo getMaxPlayers(); ?>
+			<div class="progress span2">
+				<i class="icon-user"></i>
+				<div class="bar" style="width: 30%;"></div>
+			</div>
+			
+			<div class="progress span2">
+				<div class="bar" style="width: 10%;"></div>
+			</div>
+			
+			<div class="progress span2">
+				<div class="bar" style="width: 70%;"></div>
+			</div>
+			
+			<div class="progress span2">
+				<div class="bar" style="width: 70%;"></div>
+			</div>
 		</div>
 		
 		<div class="widget">
