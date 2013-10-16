@@ -56,3 +56,11 @@ h4{
 	text-decoration: none;
 	color: #333333;
 }
+
+.dashboard{
+	height 100px;
+	text-align:center;
+}
+.dashboard .progress{
+	height:10px;
+}

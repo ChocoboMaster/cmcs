@@ -14,13 +14,32 @@
 		showBreadcrumbs(getPage());
 	?>
 		<div class="widget">
-			<?php //echo getServerAddress(); echo ":"; echo getServerPort(); ?> 0/<?php //echo getMaxPlayers(); ?>
-			<div class="progress span2">
-				<i class="icon-user"></i>
-				<div class="bar" style="width: 30%;"></div>
-			</div>
 			
-			<div class="progress span2">
+			<div class="dashboard span2">
+				<strong>Nombre de joueurs<br/>
+					3 / 10 Joueurs</strong>
+				<div class="progress progress-">
+					<div class="bar" style="width: 30%;"></div>
+				</div>
+			</div>
+
+			<div class="dashboard span2">
+				<strong>Utilisation disque<br/>
+					90 / 100 Mb</strong>
+				<div class="progress progress-danger">		
+					<div class="bar" style="width: 90%;"></div>
+				</div>
+			</div>
+
+			<div class="dashboard span2">
+				<strong>Memoire utlisee<br/>
+					3 / 10 Mb</strong>
+				<div class="progress">
+					<div class="bar bar-warning" style="width: 30%;"></div>
+				</div>
+			</div>
+
+			<!--<div class="progress span2">
 				<div class="bar" style="width: 10%;"></div>
 			</div>
 			
@@ -31,6 +50,8 @@
 			<div class="progress span2">
 				<div class="bar" style="width: 70%;"></div>
 			</div>
+<?php //echo getServerAddress(); echo ":"; echo getServerPort(); ?> 0/<?php //echo getMaxPlayers(); ?>
+		-->
 		</div>
 		
 		<div class="widget">
