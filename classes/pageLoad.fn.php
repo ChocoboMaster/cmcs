@@ -27,14 +27,14 @@
 	function showMenu($p){
 		echo "<div class='widget span2' style='padding: 8px 0;'>";
 		echo "<ul class='nav nav-list'>";
-		echo "<li"; if($p=="index.php"){echo " class='active'";} echo "><a href='index.php'>Accueil</a></li>";
-		echo "<li"; if($p=="console.php"){echo " class='active'";} echo "><a href='#'>Console</a></li>";
-		echo "<li"; if($p=="joueurs.php"){echo " class='active'";} echo "><a href='joueurs.php'>Joueurs</a></li>";
-		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='plugins.php'>Plugins</a></li>";
-		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='backup.php'>Backup</a></li>";
-		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='ftp.php'>Acces FTP</a></li>";
-		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'>Prorprietes</a></li>";
-		echo "<li"; if($p=="reinit.php"){echo " class='active'";} echo "><a href='reinit.php'>Reinitialisation</a></li>";
+		echo "<li"; if($p=="index.php"){echo " class='active'";} echo "><a href='index.php'><i class='icon icon-home'></i>Accueil</a></li>";
+		echo "<li"; if($p=="console.php"){echo " class='active'";} echo "><a href='#'><i class='icon icon-tasks'></i>Console</a></li>";
+		echo "<li"; if($p=="joueurs.php"){echo " class='active'";} echo "><a href='joueurs.php'><i class='icon icon-user'></i>Joueurs</a></li>";
+		echo "<li"; if($p=="plugins.php"){echo " class='active'";} echo "><a href='plugins.php'><i class='icon icon-th'></i>Plugins</a></li>";
+		echo "<li"; if($p=="backup.php"){echo " class='active'";} echo "><a href='backup.php'><i class='icon icon-hdd'></i>Backup</a></li>";
+		echo "<li"; if($p=="ftp.php"){echo " class='active'";} echo "><a href='ftp.php'><i class='icon icon-folder-open'></i>Acces FTP</a></li>";
+		echo "<li"; if($p=="settings.php"){echo " class='active'";} echo "><a href='settings.php'><i class='icon icon-cog'></i>Prorprietes</a></li>";
+		echo "<li"; if($p=="reinit.php"){echo " class='active'";} echo "><a href='reinit.php'><i class='icon icon-trash'></i>Reinitialisation</a></li>";
 		echo "</ul>";
 		echo "</div>";
 		
