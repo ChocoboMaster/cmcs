@@ -54,7 +54,7 @@
 					</ul>
 
 					<ul class='nav pull-right'>
-						<li><a><i class='icon-share-alt icon-white'></i> Deconnexion</a></li>
+						<li><a href='#'><i class='icon-share-alt icon-white'></i> Deconnexion</a></li>
 					</ul>
 				</div>
 			</div>

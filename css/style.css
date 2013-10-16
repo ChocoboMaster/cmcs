@@ -58,8 +58,16 @@ h4{
 }
 
 .dashboard{
-	height 100px;
+	float:none;
+	height: 70px;
+}
+
+.dashboardbars{
 	text-align:center;
+	float:left;
+	width: 197px;
+	margin-right: 15px;
+	margin-left: 15px;
 }
 .dashboard .progress{
 	height:10px;
