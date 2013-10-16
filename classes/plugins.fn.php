@@ -93,6 +93,48 @@
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Lockette</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >GroupManager</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Jobs</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >NoCheat</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Orebfuscator</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Multiverse</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
+					<tr>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >WorldEdit</a></td>
+						<td>
+							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>";
