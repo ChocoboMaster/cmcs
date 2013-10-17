@@ -3,6 +3,7 @@
 	require_once("../config.php");
 	
 	require_once("classes/MinecraftQuery.php");
+	require_once("classes/dashboard.fn.php");
 	
 	showHead();
 	showTopNav();
@@ -25,7 +26,7 @@
 
 				<div class="dashboardbars">
 					<strong>Utilisation disque<br/>
-						90 / 100 Mb</strong>
+						<?php echo formatBytes(folderSize(MC_DIR)); ?> / 100 MB</strong>
 					<div class="progress progress-warning">		
 						<div class="bar" style="width: 90%;"></div>
 					</div>

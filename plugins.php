@@ -1,6 +1,7 @@
 <?php
 	require_once("classes/pageLoad.fn.php");
 	require_once("../config.php");
+	require_once("classes/verificator.fn.php");
 	
 	require_once("classes/plugins.fn.php");
 	
@@ -12,7 +13,7 @@
 	<?php
 		showMenu(getPage());
 		showBreadcrumbs(getPage());
-		
+		verify();
 		Plugins();
 	?>
 		

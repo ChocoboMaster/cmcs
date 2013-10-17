@@ -1,5 +1,5 @@
 <?php
-	
+
 	/** MySQL Information */
 	
 	/** MySQL database Hostname */
@@ -27,5 +27,12 @@
 	
 	
 	/** Directory to acces the Minecraft server */
-	defined('MC_DIR')?null:define('MC_DIR', 'C:/Users/Charles/Documents/GitHub/cmcs/Minecraft/');
+	/** PUT THE DIRECTORY TO MC IN $mc_dir !!!!! */
+	$mc_dir = "C:/Users/Charles/Documents/GitHub/cmcs/Minecraft/";
+	
+	if(substr($mc_dir, -1, 1) == "/"){
+		defined('MC_DIR')?null:define('MC_DIR', $mc_dir);
+	}else{
+		defined('MC_DIR')?null:define('MC_DIR', $mc_dir."/");
+	}
 ?>

@@ -1,19 +1,12 @@
 <?php
 	require_once('../config.php');
-
+	require_once("classes/verificator.fn.php");
+	
 	function Plugins(){
 		nonBukkitHeader();
 		
 		showInstalledPlugins();
 		showSuggested();
-	}
-	
-	function isBukkit(){
-		if(file_exists(MC_DIR."craftbukkit.jar")){
-			return true;
-		}else{
-			return false;
-		}
 	}
 	
 	function nonBukkitHeader(){
@@ -94,43 +87,43 @@
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Lockette</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Protégez vos portes et vos coffres contre les voleurs avec Lockette.' >Lockette</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >GroupManager</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Gerer les groupes dutilisateurs en toute simplicitée!' >GroupManager</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Jobs</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Travailler et gagner de largent avec votre nouvel emploi!' >MineJobs</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >NoCheat</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Fini les tricheurs dans votre serveur! Empeche de voler, de se téléporter, de tuer ses enemis en un coup et encore plus!' >NoCheatPlus</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Orebfuscator</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Empechez vos utilisateurs dutiliser un X-RAY en leur blocant la vue avec des miliers de blocs!' >Orebfuscator</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >Multiverse</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Promenez-vous dans plusieurs maps et mondes très simplement' >Multiverse</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
-						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='N/A' >WorldEdit</a></td>
+						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='WorldEdit permet de modifier votre map comme vous le voulez. Créer des spheres, des cylindres, déplacer des objets, et encore plus!' >WorldEdit</a></td>
 						<td>
 							<button type='button' class='btn btn-primary' disabled><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
