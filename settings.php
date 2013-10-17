@@ -28,7 +28,7 @@
 				</tbody>
 			</table>
 		<div class='form-actions'>
-			<button type='submit' class='btn btn-primary' disabled>Modifier</button>
+			<button type='submit' class='btn btn-primary' disabled>Sauvegarder</button>
 		</div>
 	</div>
 	</div>
