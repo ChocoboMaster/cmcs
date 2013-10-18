@@ -28,7 +28,7 @@
 		$disk_allowed = 100;
 		$mem_used = 475;
 		$mem_allowed = 512;
-		
+		echo "<div class='widget'>";
 		echo "<div class='dashboard'>
 				<div class='dashboardbars'>
 					<strong>Nombre de joueurs<br/>
@@ -56,22 +56,24 @@
 			</div>";
 			
 			if(getProgressBarPercentage($players_active, $players_allowed)>70){
-				echo "<div class='alert alert-info'>
+				echo "<div class='alert alert-waning'>
 						Attention, vous avez beaucoup de joueurs connectes. Pensez a ajouter des slots!
 					</div>";
 			}
 			
 			if(getProgressBarPercentage($disk_used, $disk_allowed)>70){
-				echo "<div class='alert alert-info'>
+				echo "<div class='alert alert-warning'>
 						Attention, il ne vous reste plus beaucoup d'espace disque!
 					</div>";
 			}
 			
 			if(getProgressBarPercentage($mem_used, $mem_allowed)>70){
-				echo "<div class='alert alert-info'>
+				echo "<div class='alert alert-warning'>
 						Attention, vous utilisez beaucoup de memoire vive. Pensez a en rajouter a votre serveur!
 					</div>";
 			}
+			
+			echo "</div>";
 	}
 	
 	function getProgressBarPercentage($m, $a){
@@ -91,4 +93,17 @@
 		}
 	}
 
+	function showUsefulLinks(){
+		echo "<div class='widget'>
+			<h4>Liens Utiles</h4>
+			<a class='btn w50' href='joueurs.php'><i class='icon-user'></i><br/>Joueurs</a>
+			<a class='btn w50' href='plugins.php'><i class='icon-th'></i><br/>Plugins</a>
+			<a class='btn w50' href='backup.php'><i class='icon-hdd'></i><br/>Backups</a>
+			<a class='btn w50' href='ftp.php'><i class='icon-folder-open'></i><br/>FTP</a>
+			<a class='btn w50' href='settings.php'><i class='icon-cog'></i><br/> Propri&eacute;t&eacute;es</a>
+			<a class='btn btn-danger w50'><i class='icon-off icon-white'></i><br/>Arr&ecirc;ter</a>
+			<a class='btn btn-warning w50'><i class='icon-repeat icon-white'></i><br/>Red&eacute;marrer</a>
+			</div>";
+	}
+	
 ?>

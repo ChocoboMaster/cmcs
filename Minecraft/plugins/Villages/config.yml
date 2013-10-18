@@ -1,0 +1,159 @@
+debug: false
+worlds:
+- world
+- world_nether
+- world_the_end
+sql:
+  use: false
+  host: localhost
+  port: '3306'
+  username: root
+  password: password
+  database: minecraft
+  prefix: Villages
+colors:
+  default: '&7'
+  important: '&9'
+  error: '&c'
+  prefix:
+    chat: true
+    messages: '&9[&7Villages&9]'
+    village: '&9[&7%v%&9]'
+    wilderness: Wilderness
+  players:
+    friend: '&a'
+    foe: '&4'
+protection:
+  grief:
+    village:
+      use: true
+      break: false
+      place: false
+      mine: false
+      tnt: false
+    wilderness:
+      use: true
+      break: true
+      place: true
+      mine: true
+      tnt: false
+  pvp:
+    village:
+      samevillage: false
+      differentvillage: true
+      notinvillage: false
+    wilderness:
+      samevillage: false
+      differentvillage: true
+      notinvillage: false
+  mobspawning:
+    village:
+      Creeper: true
+      Skeleton: true
+      Spider: true
+      Giant: true
+      Zombie: true
+      Slime: true
+      Ghast: true
+      PigZombie: true
+      Enderman: true
+      CaveSpider: true
+      Silverfish: true
+      Blaze: true
+      LavaSlime: true
+      EnderDragon: true
+      WitherBoss: true
+      Bat: true
+      Witch: true
+      Pig: true
+      Sheep: true
+      Cow: true
+      Chicken: true
+      Squid: true
+      Wolf: true
+      MushroomCow: true
+      SnowMan: true
+      Ozelot: true
+      VillagerGolem: true
+      EntityHorse: true
+      Villager: true
+    wilderness:
+      Creeper: true
+      Skeleton: true
+      Spider: true
+      Giant: true
+      Zombie: true
+      Slime: true
+      Ghast: true
+      PigZombie: true
+      Enderman: true
+      CaveSpider: true
+      Silverfish: true
+      Blaze: true
+      LavaSlime: true
+      EnderDragon: true
+      WitherBoss: true
+      Bat: true
+      Witch: true
+      Pig: true
+      Sheep: true
+      Cow: true
+      Chicken: true
+      Squid: true
+      Wolf: true
+      MushroomCow: true
+      SnowMan: true
+      Ozelot: true
+      VillagerGolem: true
+      EntityHorse: true
+      Villager: true
+plugins:
+  worldguard: true
+  tagapi: true
+  herochat: true
+  vault: true
+features:
+  lists:
+    topvillages: true
+    villagemembers: true
+    taxday: true
+  cyclespeed: 60
+  banks:
+    item: true
+    money: true
+  plots: true
+  updates: true
+  expand:
+    method: CHUNK
+  guiscreen: true
+  aliases:
+    village:
+    - v
+    - town
+    - city
+costs:
+  createvillage: 1000
+  expandvillage: 100
+messages:
+  names:
+    wilderness: Wilderness
+  village:
+    youenter: true
+    friendlyenters: false
+    othervillage: false
+    wilderness: false
+  wilderness:
+    youenter: true
+    friendlyenters: false
+    othervillage: false
+    wilderness: false
+commands:
+  village:
+    created:
+    - say Please Change this command in the config.yml file.
+    deleted:
+    - say Please Change this command in the config.yml file.
+    playeradded:
+    - say Please Change this command in the config.yml file.
+    playerremoved:
+    - say Please Change this command in the config.yml file.

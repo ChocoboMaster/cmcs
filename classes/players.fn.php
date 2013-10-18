@@ -5,7 +5,6 @@
 	function showOperators(){
 		$file = fopen(MC_DIR."ops.txt",'r');
 		$result = nl2br(fread($file, 200));
-		//echo $result;
 		$array[] = explode("\n", $result);
 		
 		$op_count = 0;
@@ -21,10 +20,13 @@
 					<tbody>";
 			
 			foreach(array_shift($array) as $user){
-				$op_count +=1;
-				echo "<tr><td>$op_count</td>";
-				echo "<td>$user</td>";
-				echo "<td><button type='button' class='btn btn-danger' disabled><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+				if($user!=""){
+					$op_count++;
+					echo "<tr><td>$op_count</td>
+							<td>$user</td>
+							<td><button type='button' class='btn btn-danger' disabled><i class='icon icon-white icon-ban-circle'></i>
+							Enlever</button></td></tr>";
+				}
 			}
 			
 			echo "</tbody></table>";
@@ -55,10 +57,12 @@
 						<tbody>";
 				
 				foreach(array_shift($array) as $user){
-					$op_count +=1;
-					echo "<tr><td>$op_count</td>";
-					echo "<td>$user</td>";
-					echo "<td><button type='button' class='btn btn-danger disabled'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+					if($user!=""){
+						$op_count +=1;
+						echo "<tr><td>$op_count</td>";
+						echo "<td>$user</td>";
+						echo "<td><button type='button' class='btn btn-danger disabled'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+					}
 				}
 				
 				echo "</tbody></table>";
