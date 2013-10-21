@@ -62,8 +62,8 @@
 					<?php showWhitelist(); ?>
 					
 					<div class="input-append pull-right" >
-						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible..." disabled>
-						<button class="btn btn-success" type="button" disabled>Ajouter</button>
+						<input class="col-md-4 form-control" id="appendedInputButton" name="addWhitelist" type="text" placeholder="Bientot disponible...">
+						<button class="btn btn-success" id="addWL" type="button">Ajouter</button>
 					</div>
 					
 				</div>
@@ -73,7 +73,7 @@
 
 					
 					<div class="input-append pull-right">
-						<input class="span4" id="appendedInputButton" name='addOperator' type="text" placeholder="Bientot disponible...">
+						<input class="col-md-4 form-control" id="appendedInputButton" name='addOperator' type="text" placeholder="Bientot disponible...">
 						<button class="btn btn-success" id="addOp" type="button">Ajouter</button>
 					</div>
 					
@@ -87,28 +87,6 @@
 <?php
 	loadJS();
 ?>
-
-<script>
-	
-	$(function(){
-		$('#addOp').click(function(){
-			var username = document.querySelector("input[name='addOperator']").value;
-			
-			$.ajax({
-				type: 'GET',
-				url: 'scripts/addOperator.php',
-				data: "un="+username,
-				dataType: 'json',
-				success: function(data){
-						$(data).hide().appendTo(".addOperatorTable").fadeIn(1000);
-					},
-				error: function(data){
-						alert("error");
-					}
-			});
-		});
-	});
-</script>
 
 
 </html>

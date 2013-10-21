@@ -33,24 +33,24 @@
 				<div class='dashboardbars'>
 					<strong>Nombre de joueurs<br/>
 						"; echo $players_active; echo " / "; echo $players_allowed; echo " Joueurs</strong>
-					<div class='progress "; echo getProgressBarColors($players_active, $players_allowed); echo "'>
-						<div class='bar' style='width: "; echo getProgressBarPercentage($players_active, $players_allowed); echo "%;'></div>
+					<div class='progress '>
+						<div class='progress-bar "; echo getProgressBarColors($players_active, $players_allowed); echo "' style='width: "; echo getProgressBarPercentage($players_active, $players_allowed); echo "%;'></div>
 					</div>
 				</div>
 
 				<div class='dashboardbars'>
 					<strong>Utilisation disque<br/>
 						"; echo $disk_used; echo " / "; echo $disk_allowed; echo " MB</strong>
-					<div class='progress "; echo getProgressBarColors($disk_used, $disk_allowed); echo "'>		
-						<div class='bar' style='width: "; echo getProgressBarPercentage($disk_used, $disk_allowed); echo "%;'></div>
+					<div class='progress'>		
+						<div class='progress-bar "; echo getProgressBarColors($disk_used, $disk_allowed); echo "' style='width: "; echo getProgressBarPercentage($disk_used, $disk_allowed); echo "%;'></div>
 					</div>
 				</div>
 
 				<div class='dashboardbars'>
 					<strong>Memoire utlisee<br/>
 						"; echo $mem_used; echo " MB / "; echo $mem_allowed; echo " MB</strong>
-					<div class='progress "; echo getProgressBarColors($mem_used, $mem_allowed); echo "'>
-						<div class='bar' style='width:"; echo getProgressBarPercentage($mem_used, $mem_allowed); echo "%;'></div>
+					<div class='progress'>
+						<div class='progress-bar "; echo getProgressBarColors($mem_used, $mem_allowed); echo "' style='width:"; echo getProgressBarPercentage($mem_used, $mem_allowed); echo "%;'></div>
 					</div>
 				</div>
 			</div>";
@@ -85,24 +85,24 @@
 		$p = getProgressBarPercentage($m, $a);
 		
 		if($p<70){
-			return "progress-info";
+			return "progress-bar-info";
 		}else if($p <85){
-			return "progress-warning";
+			return "progress-bar-warning";
 		}else{
-			return "progress-danger";
+			return "progress-bar-danger";
 		}
 	}
 
 	function showUsefulLinks(){
 		echo "<div class='widget'>
 			<h4>Liens Utiles</h4>
-			<a class='btn w50' href='joueurs.php'><i class='icon-user'></i><br/>Joueurs</a>
-			<a class='btn w50' href='plugins.php'><i class='icon-th'></i><br/>Plugins</a>
-			<a class='btn w50' href='backup.php'><i class='icon-hdd'></i><br/>Backups</a>
-			<a class='btn w50' href='ftp.php'><i class='icon-folder-open'></i><br/>FTP</a>
-			<a class='btn w50' href='settings.php'><i class='icon-cog'></i><br/> Propri&eacute;t&eacute;es</a>
-			<a class='btn btn-danger w50'><i class='icon-off icon-white'></i><br/>Arr&ecirc;ter</a>
-			<a class='btn btn-warning w50'><i class='icon-repeat icon-white'></i><br/>Red&eacute;marrer</a>
+			<a class='btn btn-default w50' href='joueurs.php'><i class='glyphicon glyphicon-user'></i><br/>Joueurs</a>
+			<a class='btn btn-default w50' href='plugins.php'><i class='glyphicon glyphicon-th'></i><br/>Plugins</a>
+			<a class='btn btn-default w50' href='backup.php'><i class='glyphicon glyphicon-hdd'></i><br/>Backups</a>
+			<a class='btn btn-default w50' href='ftp.php'><i class='glyphicon glyphicon-folder-open'></i><br/>FTP</a>
+			<a class='btn btn-default w50' href='settings.php'><i class='glyphicon glyphicon-cog'></i><br/> Propri&eacute;t&eacute;es</a>
+			<a class='btn btn-danger w50'><i class='glyphicon glyphicon-off glyphicon-white'></i><br/>Arr&ecirc;ter</a>
+			<a class='btn btn-warning w50'><i class='glyphicon glyphicon-repeat glyphicon-white'></i><br/>Red&eacute;marrer</a>
 			</div>";
 	}
 	

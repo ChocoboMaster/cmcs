@@ -1,0 +1,39 @@
+##
+#EnderChestPlus
+#This File is autocreated when you first load the plugin.
+#When editting this file use 2 spaces and not tabs!
+#
+#All of the values in this config when first made are the same as the defualts.
+##
+
+##Chest size
+#This is the size in ROWS, if you put in "3" it will be 3 rows, which is 27 slots. (multiply by 9)
+#NOTE: If you make this smaller than a previous size you ran, it will cut off any items that were in lower rows.
+#You can make this into slots with the permission editor below.
+ChestSize: 6
+
+##Chest Title
+#This changes the name that appears to the right of the player name.
+#NOW SUPPORTS COLORS!
+ChestTitle: '&5EnderChestPlus'
+
+
+#BlacklistMode
+##true: Disabled ALL enderchests, AND enderchestplus chests.
+##false: Disables ONLY enderchestplus chests, but normal ones still work work!
+BlacklistMode: true
+
+#WorldBlacklist
+#Put world names in this list if you want enderchests to be disabled in that world
+WorldBlacklist: ["creative", "pvp"]
+
+#Permission Editor
+#NOTE: This is in ROWS
+#Example below gives donators 54 slots (a normal double chest) and default 27 slots (multiply by 9)
+#NOTE: If a player does not have one of these perms it will use the chestSize above!
+#IMPORTANT: When using the permission it will be used with EnderChestPlus.<Permission>
+# The below in your permissions file would be given to players as:(THEY ARE CASE SENSITIVE)
+# EnderChestPlus.donator -- EnderChestPlus.default
+permissionEditor:
+  donator: 6
+  default: 3

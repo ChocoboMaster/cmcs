@@ -3,8 +3,8 @@
 	require_once('pageLoad.fn.php');
 	
 	function showOperators(){
-		$file = fopen(MC_DIR."ops.txt",'r');
-		$result = nl2br(fread($file, 200));
+		$file = MC_DIR."ops.txt";
+		$result = file_get_contents($file);
 		$array[] = explode("\n", $result);
 		
 		$op_count = 0;
@@ -18,13 +18,12 @@
 						</tr>
 					</thead>
 					<tbody>";
-			
 			foreach(array_shift($array) as $user){
-				if($user!=""){
+				if(strlen($user)>1){
 					$op_count++;
 					echo "<tr><td>$op_count</td>
 							<td>$user</td>
-							<td><button type='button' class='btn btn-danger'><i class='icon icon-white icon-ban-circle'></i>
+							<td><button type='button' class='btn btn-danger delOp' value='$user'><i class='glyphicon glyphicon-white glyphicon-ban-circle'></i>
 							Enlever</button></td></tr>";
 				}
 			}
@@ -39,14 +38,13 @@
 	
 	function showWhitelist(){
 		if(file_exists(MC_DIR."white-list.txt")){
-			$file = fopen(MC_DIR."white-list.txt",'r');
-			$result = nl2br(fread($file, 200));
-			//echo $result;
+			$file = MC_DIR."white-list.txt";
+			$result = file_get_contents($file);
 			$array[] = explode("\n", $result);
 			
 			$op_count = 0;
 			if($result!=""){
-				echo "<table class='table table-striped'>
+				echo "<table class='table table-striped addWhitelistTable'>
 						<thead>
 							<tr>
 								<th>#</th>
@@ -57,11 +55,11 @@
 						<tbody>";
 				
 				foreach(array_shift($array) as $user){
-					if($user!=""){
+					if(strlen($user)>1){
 						$op_count +=1;
 						echo "<tr><td>$op_count</td>";
 						echo "<td>$user</td>";
-						echo "<td><button type='button' class='btn btn-danger'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+						echo "<td><button type='button' class='btn btn-danger delWL' value='$user'><i class='glyphicon glyphicon-white glyphicon-ban-circle'></i> Enlever</button></td></tr>";
 					}
 				}
 				

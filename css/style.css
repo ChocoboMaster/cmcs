@@ -1,7 +1,10 @@
 .w50{
-	width: 64px;
+	width: 110px;
 }
 
+body{
+	padding-top: 25px;
+}
 .widget{
 	  min-height: 20px;
   padding: 8px;

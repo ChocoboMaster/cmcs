@@ -14,9 +14,9 @@
 			echo "<tr>
 					<td>Allow-flight</td>
 					<td>
-						<div class='control-group'> 
-							<label class='radio inline'><input type='radio' name='optionsRadios1' "; echo $parser['allow-flight']=="1" ? "checked":""; echo "> Activer</label>
-							<label class='radio inline'><input type='radio' name='optionsRadios1' "; echo $parser['allow-flight']=="" ? "checked":""; echo "> Desactiver</label>
+						<div class='form-inline'> 
+							<label class='radio '><input type='radio' name='optionsRadios1' "; echo $parser['allow-flight']=="1" ? "checked":""; echo "> Activer</label>
+							<label class='radio '><input type='radio' name='optionsRadios1' "; echo $parser['allow-flight']=="" ? "checked":""; echo "> Desactiver</label>
 						</div>
 					</td>
 				</tr>";
@@ -26,9 +26,9 @@
 			echo "<tr>
 				<td>Allow-nether</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios2' "; echo $parser['allow-nether']=="1" ? "checked":""; echo "> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios2' "; echo $parser['allow-nether']=="" ? "checked":""; echo "> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios2' "; echo $parser['allow-nether']=="1" ? "checked":""; echo "> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios2' "; echo $parser['allow-nether']=="" ? "checked":""; echo "> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -42,7 +42,7 @@
 			echo "<tr>
 				<td>Difficulty</td>
 				<td>
-					<select>
+					<select class='form-control'>
 						<option "; echo $parser['difficulty']=="0" ? "selected":""; echo ">Peaceful</option>
 						<option "; echo $parser['difficulty']=="1" ? "selected":""; echo ">Easy</option>
 						<option "; echo $parser['difficulty']=="2" ? "selected":""; echo ">Normal</option>
@@ -60,7 +60,7 @@
 			echo "<tr>
 				<td>Gamemodes</td>
 				<td>
-					<select>
+					<select class='form-control'>
 						<option "; echo $parser['difficulty']=="0" ? "selected":""; echo ">Survival</option>
 						<option "; echo $parser['difficulty']=="1" ? "selected":""; echo ">Creative</option>
 					</select>
@@ -72,9 +72,9 @@
 			echo "<tr>
 				<td>Grow-trees</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios3' "; echo $parser['grow-trees']=="1" ? "checked":""; echo "> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios3' "; echo $parser['grow-trees']=="" ? "checked":""; echo "> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios3' "; echo $parser['grow-trees']=="1" ? "checked":""; echo "> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios3' "; echo $parser['grow-trees']=="" ? "checked":""; echo "> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -84,7 +84,7 @@
 			echo "<tr>
 					<td>level-name</td>
 					<td>
-						<input type='text' placeholder='Level name...' value='".$parser['level-name']."'/>
+						<input type='text' class='form-control' placeholder='Level name...' value='".$parser['level-name']."'/>
 					</td>
 				</tr>";
 			
@@ -93,7 +93,7 @@
 			echo "<tr>
 					<td>MOTD</td>
 					<td>
-						<input type='text' placeholder='Message of the day...' value='".$parser['motd']."'/>
+						<input type='text' class='form-control' placeholder='Message of the day...' value='".$parser['motd']."'/>
 					</td>
 				</tr>";
 		
@@ -104,9 +104,9 @@
 			echo "<tr>
 				<td>Online-mode</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios4' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios4'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios4' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios4'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -114,9 +114,9 @@
 			echo "<tr>
 				<td>Online-mode</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios4'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios4' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios4'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios4' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -128,9 +128,9 @@
 			echo "<tr>
 				<td>PvP</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios5' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios5'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios5' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios5'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -138,9 +138,9 @@
 			echo "<tr>
 				<td>PvP</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios5'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios5' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios5'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios5' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -152,9 +152,9 @@
 			echo "<tr>
 				<td>Sapwn-animals</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios6' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios6'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios6' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios6'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -162,9 +162,9 @@
 			echo "<tr>
 				<td>Spawn-animals</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios6'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios6' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios6'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios6' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -176,9 +176,9 @@
 			echo "<tr>
 				<td>Spawn-monsters</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios7' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios7'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios7' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios7'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -186,9 +186,9 @@
 			echo "<tr>
 				<td>Spawn-monsters</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios7'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios7' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios7'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios7' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -200,9 +200,9 @@
 			echo "<tr>
 				<td>Generate-structure</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios8' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios8'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios8' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios8'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -210,9 +210,9 @@
 			echo "<tr>
 				<td>Generate-structure</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios8'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios8' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios8'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios8' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -224,9 +224,9 @@
 			echo "<tr>
 				<td>Whitelist</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios9' checked> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios9'> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios9' checked> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios9'> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
@@ -234,9 +234,9 @@
 			echo "<tr>
 				<td>Whitelist</td>
 				<td>
-					<div class='control-group'>
-						<label class='radio inline'><input type='radio' name='optionsRadios9'> Activer</label>
-						<label class='radio inline'><input type='radio' name='optionsRadios9' checked> Desactiver</label>
+					<div class='form-inline'>
+						<label class='radio '><input type='radio' name='optionsRadios9'> Activer</label>
+						<label class='radio '><input type='radio' name='optionsRadios9' checked> Desactiver</label>
 					</div>
 				</td>
 			</tr>";
