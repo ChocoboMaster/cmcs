@@ -72,7 +72,7 @@
 					<?php showOperators(); ?>
 
 					
-					<div class="input-append pull-right" >
+					<div class="input-append pull-right">
 						<input class="span4" id="appendedInputButton" name='addOperator' type="text" placeholder="Bientot disponible...">
 						<button class="btn btn-success" id="addOp" type="button">Ajouter</button>
 					</div>
@@ -100,7 +100,7 @@
 				data: "un="+username,
 				dataType: 'json',
 				success: function(data){
-						alert(data);
+						$(data).hide().appendTo(".addOperatorTable").fadeIn(1000);
 					},
 				error: function(data){
 						alert("error");

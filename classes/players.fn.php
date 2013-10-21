@@ -1,7 +1,7 @@
 <?php
 	require_once('../config.php');
 	require_once('pageLoad.fn.php');
-
+	
 	function showOperators(){
 		$file = fopen(MC_DIR."ops.txt",'r');
 		$result = nl2br(fread($file, 200));
@@ -9,7 +9,7 @@
 		
 		$op_count = 0;
 		if($result!=""){
-			echo "<table class='table table-striped'>
+			echo "<table class='table table-striped addOperatorTable'>
 					<thead>
 						<tr>
 							<th>#</th>
@@ -24,7 +24,7 @@
 					$op_count++;
 					echo "<tr><td>$op_count</td>
 							<td>$user</td>
-							<td><button type='button' class='btn btn-danger' disabled><i class='icon icon-white icon-ban-circle'></i>
+							<td><button type='button' class='btn btn-danger'><i class='icon icon-white icon-ban-circle'></i>
 							Enlever</button></td></tr>";
 				}
 			}
@@ -61,7 +61,7 @@
 						$op_count +=1;
 						echo "<tr><td>$op_count</td>";
 						echo "<td>$user</td>";
-						echo "<td><button type='button' class='btn btn-danger disabled'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
+						echo "<td><button type='button' class='btn btn-danger'><i class='icon icon-white icon-ban-circle'></i> Enlever</button></td></tr>";
 					}
 				}
 				
@@ -77,6 +77,7 @@
 				</div>	";
 		}
 	}
+	
 	
 
 
