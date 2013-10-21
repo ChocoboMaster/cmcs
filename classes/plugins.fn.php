@@ -55,10 +55,19 @@
 		
 		echo "</tbody></table></div>";
 		
-		
 	}
 	
 	function showSuggested(){
+	
+		$plugin = getInstalledPlugins();
+		$dir = MC_DIR."plugins/";
+		$plugins[] = "";
+		foreach($plugin as $name){
+			$name = str_replace($dir, "", $name);
+			$name = str_replace(".jar", "", $name);
+			array_push($plugins, $name);
+		}
+	
 		echo "<div class='widget span4 m0'>
 			<table class='table table-striped'>
 				<thead>
@@ -71,61 +80,61 @@
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Gérez votre serveur facilement avec des fonctionalités supplémentaires.' >Essentials</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>							
+							<button type='button' class='btn btn-primary' "; if(in_array("Essentials", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>							
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Impôts, salaires, intérêts... Devenez un cafteur capitaliste!' >iConomy</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("iConomy", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Permet à chaque joueur de créer sa guilde ou den intégrer une.' >Factions</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("Factions", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Protégez vos portes et vos coffres contre les voleurs avec Lockette.' >Lockette</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("Lockette", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Gerer les groupes dutilisateurs en toute simplicitée!' >GroupManager</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("GroupManager", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Travailler et gagner de largent avec votre nouvel emploi!' >MineJobs</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("MineJobs", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Fini les tricheurs dans votre serveur! Empeche de voler, de se téléporter, de tuer ses enemis en un coup et encore plus!' >NoCheatPlus</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("NoCheatPlus", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Empechez vos utilisateurs dutiliser un X-RAY en leur blocant la vue avec des miliers de blocs!' >Orebfuscator</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("Orebfuscator", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='Promenez-vous dans plusieurs maps et mondes très simplement' >Multiverse</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("Multiverse", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 					<tr>
 						<td><a class='pluginDescription' data-toggle='tooltip' title='' data-original-title='WorldEdit permet de modifier votre map comme vous le voulez. Créer des spheres, des cylindres, déplacer des objets, et encore plus!' >WorldEdit</a></td>
 						<td>
-							<button type='button' class='btn btn-primary' ><i class='icon icon-white icon-download-alt'></i> Installer</button>
+							<button type='button' class='btn btn-primary' "; if(in_array("WorldEdit", $plugins)){echo "disabled";} echo "><i class='icon icon-white icon-download-alt'></i> Installer</button>
 						</td>
 					</tr>
 				</tbody>
