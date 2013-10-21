@@ -3,6 +3,11 @@
 	require_once('../config.php');
 	
 	function showSettings(){
+		$file = MC_DIR."server.properties";
+		$current = file_get_contents($file);
+		$new = str_replace("#", ";", $current);
+		file_put_contents($file, $new);
+	
 		$parser = parse_ini_file(MC_DIR."server.properties");
 			
 		//Allow-flight (True, False)

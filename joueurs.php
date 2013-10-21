@@ -73,7 +73,7 @@
 
 					
 					<div class="input-append pull-right" >
-						<input class="span4" id="appendedInputButton" type="text" placeholder="Bientot disponible...">
+						<input class="span4" id="appendedInputButton" name='addOperator' type="text" placeholder="Bientot disponible...">
 						<button class="btn btn-success" id="addOp" type="button">Ajouter</button>
 					</div>
 					
@@ -91,14 +91,12 @@
 <script>
 	
 	$(function(){
-		
-		
 		$('#addOp').click(function(){
-			var username = $('#appendedInputButton').html();
-		alert($('#appendedInputButton').html());
+			var username = document.querySelector("input[name='addOperator']").value;
+			
 			$.ajax({
 				type: 'GET',
-				url: '/scripts/addOperator.php',
+				url: 'scripts/addOperator.php',
 				data: "un="+username,
 				dataType: 'json',
 				success: function(data){
