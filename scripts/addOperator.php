@@ -1,6 +1,9 @@
 <?php
-
-	if($_POST){
+	
+	if(isset($_GET['un'])){
+		echo $_GET['un'];
+	}
+	/*if($_POST){
 		$expected = array("appendedInputButton");
 		$validation = array("Veuillez entrer un nom");
 		
@@ -30,5 +33,5 @@
 		
 		echo json_encode($array);
 		
-	}
+	}*/
 ?>

@@ -97,18 +97,12 @@
 			var username = $('#appendedInputButton').html();
 		alert($('#appendedInputButton').html());
 			$.ajax({
-				type: 'POST',
+				type: 'GET',
 				url: '/scripts/addOperator.php',
-				data: fields,
+				data: "un="+username,
 				dataType: 'json',
 				success: function(data){
-						if(data.error){
-							$.each(data.fields, function(k,v){
-								
-							});
-						}else{
-						
-						}
+						alert(data);
 					},
 				error: function(data){
 						alert("error");
