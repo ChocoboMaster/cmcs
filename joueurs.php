@@ -61,9 +61,11 @@
 				<div class="tab-pane" id="tab2">
 					<?php showWhitelist(); ?>
 					
-					<div class="input-append pull-right" >
-						<input class="col-md-4 form-control" id="appendedInputButton" name="addWhitelist" type="text" placeholder="Bientot disponible...">
-						<button class="btn btn-success" id="addWL" type="button">Ajouter</button>
+					<div class="input-group col-md-4 pull-right">
+						<input type="text" class="form-control" name='addWhitelist'>				
+						<span class="input-group-btn">
+							<button class="btn btn-success" d="addWL" type="button">Ajouter</button>
+						</span>
 					</div>
 					
 				</div>
@@ -72,9 +74,11 @@
 					<?php showOperators(); ?>
 
 					
-					<div class="input-append pull-right">
-						<input class="col-md-4 form-control" id="appendedInputButton" name='addOperator' type="text" placeholder="Bientot disponible...">
-						<button class="btn btn-success" id="addOp" type="button">Ajouter</button>
+					<div class="input-group col-md-4 pull-right">
+						<input type="text" class="form-control" name='addOperator'>				
+						<span class="input-group-btn">
+							<button class="btn btn-success" d="addOp" type="button">Ajouter</button>
+						</span>
 					</div>
 					
 					

@@ -27,10 +27,11 @@
 					?>
 				</tbody>
 			</table>
-		<div class='form-actions'>
-			<button type='submit' class='btn btn-primary' disabled>Sauvegarder</button>
+			
+			<div class='form-actions' >
+				<button type='submit' class='btn btn-primary'>Sauvegarder</button>
+			</div>
 		</div>
-	</div>
 	</div>
 </div>
 
